@@ -102,5 +102,51 @@
 #     if i == "Emma":
 #         print(str1.rfind(i))
 # ---------------------------------------------------
+# Exercise 13: Split a string on hyphens
+# str1 = "Emma-is-a-data-scientist"
+# print(str1.split("-"))
 # ---------------------------------------------------
+# Exercise 14: Remove empty strings from a list of strings
+# str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+# str_list = list(filter( lambda x: x!="",str_list))
+# print(str_list)
 # ---------------------------------------------------
+# Exercise 15: Remove special symbols / punctuation from a string
+# import string
+# str1 = "/*Jon is @developer & musician"
+# # str1 = list(filter(lambda x:x.i))
+# new_str = str1.translate(str.maketrans("","",string.punctuation))
+# print(new_str)
+# ---------------------------------------------------
+# Exercise 16: Removal all characters from a string except integers
+# str1 = 'I am 25 years and 10 months old'
+# new_str = list(filter(lambda x:x.isdigit(),str1))
+# print("".join(new_str))
+
+# ----------------------------------------------------
+# Exercise 17: Find words with both alphabets and numbers
+# str1 = "Emma25 is Data scientist50 and AI Expert"
+# str2 = str1.split(" ")
+# for word in str2:
+#     has_alpha = False
+#     has_numeric = False
+    
+#     for char in word:
+#         if char.isalpha():
+#             has_alpha = True
+#         elif char.isdigit():
+#             has_numeric = True
+    
+#     if has_alpha and has_numeric:
+#         print(word)
+
+# for word in str2:
+#     if any(char.isalpha() for char in word) and any(char.isdigit() for char in word):
+#         print(word)
+# -------------------------------------------------
+# Exercise 18: Replace each special symbol with # in the following 
+# import string
+
+# str1 = '/*Jon is @developer & musician!!'
+# new_str = str1.translate(str.maketrans(string.punctuation, '#' * len(string.punctuation)))
+# print(new_str)
